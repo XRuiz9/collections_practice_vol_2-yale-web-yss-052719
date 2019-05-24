@@ -52,10 +52,12 @@ def count_elements(array)
 end
 
 def merge_data (data1, data2)
+  count =
   data1.each do |person|
     person.each do |key, value|
       data2.each do |person2|
         person2.each do |key2, value2|
+          if key == [first_name] && value == key2
           data1[0] = data1[0].merge(value2)
         end
       end
