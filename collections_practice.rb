@@ -53,8 +53,8 @@ end
 
 def merge_data (data1, data2)
   data1 = data1.concat(data2)
-  data1[0] = {}
-  data1
+  data.each do |person|
+    person.merge({})
 end
 
 def find_cool (arg)
