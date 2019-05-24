@@ -52,9 +52,13 @@ def count_elements(array)
 end
 
 def merge_data (data1, data2)
-  data1 = data1.concat(data2)
+  data1
   data1.collect do |person|
-    person.merge({:dog => "pix"})
+    data2.each do |person2|
+      person2.each do |name, stats|
+        person.merge(stats)
+      end
+    end
   end
 end
 
