@@ -57,9 +57,7 @@ def merge_data (data1, data2)
       data2.each do |person2|
         person2.each do |name, stats|
           if data1[person][:first_name] == data2[person2][name]
-            stats.each do |stat, statv|
-              data1[stat] = statv
-            end
+            data1[person].merge(stats)
           end
         end
       end
