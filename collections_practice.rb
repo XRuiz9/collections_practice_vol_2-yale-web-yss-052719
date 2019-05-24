@@ -78,7 +78,7 @@ def organize_schools (arg)
   organize = {}
   arg.each do |school, lochash|
     lochash.each do |key, loc|
-      if organize.has_key(loc)
+      if organize.has_key?(loc)
         organize[loc] << school
       else
         organize[loc] = [school]
