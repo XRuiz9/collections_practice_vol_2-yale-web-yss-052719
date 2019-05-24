@@ -58,6 +58,7 @@ def merge_data (data1, data2)
         person.each do |name, data|
           data.each do |category, value2|
             if name == data1[person][:first_name]
+              data1[person][category] = value2
 end
 
 def find_cool (arg)
