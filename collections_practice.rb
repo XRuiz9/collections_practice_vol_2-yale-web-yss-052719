@@ -52,17 +52,7 @@ def count_elements(array)
 end
 
 def merge_data (data1, data2)
-  data1.collect do |person|
-    person.each do |key, value|
-      data2.each do |person2|
-        person2.each do |name, stats|
-          if data1[person][:first_name] == data2[person2][name]
-            data1[person].merge(stats)
-          end
-        end
-      end
-    end
-  end
+  data1.merge(data2)
 end
 
 def find_cool (arg)
