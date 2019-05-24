@@ -57,7 +57,8 @@ def merge_data (data1, data2)
     data2.each do |person2|
       person2.each do |name, stats|
         if name == "blake"
-        person = person.merge!(stats)
+          person = person.merge!(stats)
+        end
       end
     end
   end
