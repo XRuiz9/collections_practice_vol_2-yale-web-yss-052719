@@ -69,10 +69,6 @@ def merge_data (data1, data2)
 end
 
 def find_cool (arg)
-  "hey"
-end
-
-def organize_schools (arg)
   name = ""
   arg.each do |person|
     person.each do |key, value|
@@ -82,4 +78,8 @@ def organize_schools (arg)
     end
   end
   name
+end
+
+def organize_schools (arg)
+  "hey"
 end
