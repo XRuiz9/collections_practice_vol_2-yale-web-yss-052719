@@ -53,7 +53,8 @@ end
 
 def merge_data (data1, data2)
   data1 = data1.concat(data2)
-  data[0].merge[2]
+  data[0] = data[0].merge[2]
+  data[1] = data[1].merge[3]
 end
 
 def find_cool (arg)
