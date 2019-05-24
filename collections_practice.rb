@@ -60,6 +60,8 @@ def merge_data (data1, data2)
           if key == :first_name
             if person2.has_key?(value)
               person = person.merge(value2)
+            end
+          end
         end
       end
     end
