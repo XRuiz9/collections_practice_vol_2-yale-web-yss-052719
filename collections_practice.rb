@@ -58,7 +58,7 @@ def merge_data (data1, data2)
       data2.each do |person2|
         person2.each do |key2, value2|
           if key == :first_name && value == key2
-            person = person.merge(value2)
+            data1 = {}
           end
         end
       end
