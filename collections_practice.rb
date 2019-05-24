@@ -53,12 +53,19 @@ end
 
 def merge_data (data1, data2)
   data1.concat(data2)
-
+  test = ""
   data1.each do |person|
     person.each do |key, value|
       data2.each do |person2|
         person2.each do |key2, value2|
           if key2 == data1[person][:first_name]
+            test = ""
+          end
+        end
+      end
+    end
+  end
+  test
 end
 
 def find_cool (arg)
