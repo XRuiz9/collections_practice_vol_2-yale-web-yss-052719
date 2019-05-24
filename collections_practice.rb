@@ -75,5 +75,5 @@ def find_cool (arg)
 end
 
 def organize_schools (arg)
-  "hey"
+  arg
 end
