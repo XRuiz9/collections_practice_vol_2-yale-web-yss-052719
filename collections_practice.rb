@@ -53,7 +53,7 @@ end
 
 def merge_data (data1, data2)
   data1 = data1.concat(data2)
-  data.collect do |person|
+  data1.collect do |person|
     person.merge({:dog => "pix"})
   end
 end
