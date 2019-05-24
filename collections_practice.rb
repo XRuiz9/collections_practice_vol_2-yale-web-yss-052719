@@ -58,9 +58,7 @@ def merge_data (data1, data2)
     person.each do |key, value|
       data2.each do |person2|
         person2.each do |key2, value2|
-          if key2 == [data1][person][key]
-            test = "hi"
-          end
+          data1[person].merge(data2[person2])
         end
       end
     end
