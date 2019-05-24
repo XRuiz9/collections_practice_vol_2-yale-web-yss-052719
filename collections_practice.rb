@@ -75,5 +75,15 @@ def find_cool (arg)
 end
 
 def organize_schools (arg)
-  arg
+  organize = {}
+  arg.each do |school, lochash|
+    lochash.each do |key, loc|
+      if organize.has_key(loc)
+        organize[loc] << school
+      else
+        organize[loc] = [school]
+      end
+    end
+  end
+  organize
 end
