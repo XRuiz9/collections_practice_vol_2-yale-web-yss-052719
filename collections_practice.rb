@@ -52,8 +52,6 @@ def count_elements(array)
 end
 
 def merge_data (data1, data2)
-  data1.concat(data2)
-  test = ""
   data1.each do |person|
     person.each do |key, value|
       data2.each do |person2|
@@ -63,7 +61,7 @@ def merge_data (data1, data2)
       end
     end
   end
-  test
+  data1
 end
 
 def find_cool (arg)
