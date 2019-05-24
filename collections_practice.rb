@@ -52,16 +52,14 @@ def count_elements(array)
 end
 
 def merge_data (data1, data2)
-dupe = data1
+  count =
   data1.each do |person|
     person.each do |key, value|
       data2.each do |person2|
         person2.each do |key2, value2|
-          if key == :first_name && value == key2
-            value2.each do |key3, value3|
-              dupe[0][key3] = value3
-            end
-          end
+          if key == :first_name
+            if person2.has_key?(value)
+              person = person.merge(value2)
         end
       end
     end
