@@ -78,6 +78,9 @@ def find_cool (arg)
     end
   end
   name
+
+  arg.select do |person|
+    person[:temperature]  == "cool"
 end
 
 def organize_schools (arg)
