@@ -56,7 +56,7 @@ def merge_data (data1, data2)
     person.each do |key, value|
       data2.each do |person2|
         person2.each do |key2, value2|
-          data1[person] = "hi"
+          data1[person] = {"hi"}
         end
       end
     end
