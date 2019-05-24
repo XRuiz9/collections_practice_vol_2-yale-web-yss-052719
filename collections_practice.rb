@@ -73,7 +73,7 @@ def find_cool (arg)
   arg.each do |person|
     person.each do |key, value|
       if key == :temperature && value = :cool
-        name = persn[:name]
+        name = person[:name]
       end
     end
   end
