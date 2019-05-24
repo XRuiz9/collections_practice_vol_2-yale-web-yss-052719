@@ -52,7 +52,7 @@ def count_elements(array)
 end
 
 def merge_data (data1, data2)
-  data1.concat(data2).flatten
+  data1.concat(data2)
 end
 
 def find_cool (arg)
