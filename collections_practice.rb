@@ -53,8 +53,8 @@ end
 
 def merge_data (data1, data2)
   data1 = data1.concat(data2)
-  data1[0].merge!(data1[2])
-  data1[1].merge!(data1[3])
+  data1[0].merge(data1[2])
+  data1[1].merge(data1[3])
   data1
 end
 
