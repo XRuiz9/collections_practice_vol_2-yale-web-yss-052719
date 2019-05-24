@@ -73,5 +73,9 @@ def find_cool (arg)
 end
 
 def organize_schools (arg)
-  "yo"
+  name = ""
+  arg.each do |person|
+    person.each do |key, value|
+      if arg[person][:temperature] == "cool"
+        name = arg[person][:name]
 end
