@@ -69,11 +69,11 @@ def merge_data (data1, data2)
 end
 
 def find_cool (arg)
-  name = ""
+  name = []
   arg.each do |person|
     person.each do |key, value|
       if key == :temperature && value = :cool
-        name = [person]
+        name << person
       end
     end
   end
