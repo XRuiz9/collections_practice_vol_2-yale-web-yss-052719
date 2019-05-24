@@ -59,7 +59,7 @@ dupe = data1
         person2.each do |key2, value2|
           if key == :first_name && value == key2
             value2.each do |key3, value3|
-              dupe[person][key3] = value3
+              dupe[-][key3] = value3
             end
           end
         end
