@@ -78,4 +78,8 @@ def organize_schools (arg)
     person.each do |key, value|
       if arg[person][:temperature] == "cool"
         name = arg[person][:name]
+      end
+    end
+  end
+  name
 end
