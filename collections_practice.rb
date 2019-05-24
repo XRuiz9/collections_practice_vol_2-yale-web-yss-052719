@@ -54,7 +54,7 @@ end
 def merge_data (data1, data2)
   data1 = data1.concat(data2)
   data.each do |person|
-    person.merge({})
+    person.merge({:dog => "pix"})
   end
 end
 
