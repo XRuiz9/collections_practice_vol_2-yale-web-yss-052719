@@ -60,6 +60,8 @@ def merge_data (data1, data2)
           if key == :first_name && value == key2
             key2.each do |key3, value3|
               person[key3] = value3
+            end
+          end
         end
       end
     end
